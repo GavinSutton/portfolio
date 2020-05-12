@@ -1,0 +1,42 @@
+.skills {
+    background: $backgroundOne;
+    .title {
+            padding-top: 70px;
+            text-align: center;
+        }
+    h2 {
+        text-align: center;
+    }
+
+    .skillsList {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 50px 0 70px;
+        li {
+            flex: 1 1 25%;
+            text-align: center;
+            padding: 40px;
+        }
+    }
+
+    i {
+        font-size: 5rem;
+    }
+
+    img[src="/assets/icons/responsive.png"] {
+        width: 100px;
+        padding-bottom: 10px;
+    }
+
+    img[src="/assets/icons/firebase.png"] {
+        width: 75px;
+    }
+
+    img[src="/assets/icons/jQuery.png"],
+    img[src="/assets/icons/vscode.png"]{
+        padding-bottom: 5px;
+        width: 75px;
+    }
+
+}

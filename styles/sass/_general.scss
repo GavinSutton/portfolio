@@ -1,0 +1,66 @@
+* {
+    transition: 0.5s all ease;
+}
+
+body {
+    color: white;
+    font-size: 125%;
+}
+
+h1, 
+h2, 
+p {
+    padding: 10px 0
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    background: none;
+    margin: 20px 20px 20px 0;
+    padding: 20px 30px;
+    width: 150px;
+}
+
+.buttonWhite {
+    border: 1px solid white;
+    color: white
+}
+
+.buttonYellow {
+    border: 1px solid $primaryColour;
+    color: $primaryColour;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.yellow {
+    color: $primaryColour;
+}
