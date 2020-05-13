@@ -14,7 +14,35 @@
         }
     }
 
-    // .project {
+    .portfolioProjectList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-    // }
+    .project {
+        display: flex;
+        flex-direction: row;
+        padding: 50px 0;
+        margin: 10px;
+        width: 100%;
+    }
+
+    .projectTwo, 
+    .projectFour,
+    .projectSix {
+        flex-direction: row-reverse;
+    }
+
+    .projectImageBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 50%;
+        width: 400px;
+    }
+
+    .projectDescriptionBox {
+        flex: 1 1 50%;
+    }
 }

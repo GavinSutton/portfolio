@@ -297,11 +297,17 @@ img {
   width: 100%;
 }
 
-button {
-  background: none;
+.button {
+  display: inline-block;
   margin: 20px 20px 20px 0;
   padding: 15px 20px;
-  width: 180px;
+  text-align: center;
+  width: 200px;
+}
+
+.button:focus {
+  -webkit-box-shadow: 2px 2px 2px #F4BC17;
+          box-shadow: 2px 2px 2px #F4BC17;
 }
 
 .buttonWhite {
@@ -322,6 +328,17 @@ button {
 
 .yellow {
   color: #F4BC17;
+}
+
+.line::before {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid #F4BC17;
+  color: #F4BC17;
+  width: 4rem;
+  margin-right: 2px;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .header {
@@ -604,6 +621,63 @@ button {
 
 .portfolio .portfolioProjectChoiceList li {
   padding: 10px 15px;
+}
+
+.portfolio .portfolioProjectList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 50px 0;
+  margin: 10px;
+  width: 100%;
+}
+
+.portfolio .projectTwo,
+.portfolio .projectFour,
+.portfolio .projectSix {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.portfolio .projectImageBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  width: 400px;
+}
+
+.portfolio .projectDescriptionBox {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
 }
 
 .contact {
