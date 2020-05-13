@@ -256,6 +256,7 @@ textarea {
 body {
   color: white;
   font-size: 125%;
+  font-family: 'Jost', sans-serif;
 }
 
 h1,
@@ -682,6 +683,50 @@ img {
 
 .contact {
   background: #0F112D;
+}
+
+.contact .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .contactInfo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+}
+
+.contact form input,
+.contact form textarea {
+  border: 2px solid #F4BC17;
+}
+
+.contact form button {
+  background: none;
+}
+
+.contact form input {
+  margin: 10px 0;
+}
+
+.contact form .contactNames {
+  -webkit-columns: 2;
+          columns: 2;
 }
 
 footer {

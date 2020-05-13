@@ -1,3 +1,35 @@
 .contact {
     background: $backgroundOne;
+
+    .wrapper {
+        display: flex;
+    }
+
+    .contactInfo {
+        flex: 1 1 50%;
+    }
+
+    form {
+        display: flex;
+        flex: 1 1 50%;
+        flex-direction: column;
+        padding: 50px;
+
+        input, 
+        textarea {
+            border: 2px solid $primaryColour;
+        }
+
+        button {
+            background: none;
+        }
+
+        input {
+            margin: 10px 0;
+        }
+
+        .contactNames {
+            columns: 2;
+        }
+    }
 }
