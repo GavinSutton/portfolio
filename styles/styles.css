@@ -669,15 +669,15 @@ img {
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
   width: 400px;
 }
 
 .portfolio .projectDescriptionBox {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
 }
 
 .contact {
