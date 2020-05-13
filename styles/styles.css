@@ -272,6 +272,14 @@ h2 {
   font-size: 3rem;
 }
 
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
 p {
   font-size: 1.2rem;
 }
@@ -292,8 +300,8 @@ img {
 button {
   background: none;
   margin: 20px 20px 20px 0;
-  padding: 20px 30px;
-  width: 150px;
+  padding: 15px 20px;
+  width: 180px;
 }
 
 .buttonWhite {
@@ -578,6 +586,24 @@ button {
 
 .portfolio {
   background: #101026;
+  text-align: center;
+}
+
+.portfolio .wrapper {
+  text-align: center;
+}
+
+.portfolio .portfolioProjectChoiceList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio .portfolioProjectChoiceList li {
+  padding: 10px 15px;
 }
 
 .contact {

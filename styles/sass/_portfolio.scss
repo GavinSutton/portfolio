@@ -1,3 +1,20 @@
 .portfolio {
     background: $backgroundTwo;
+    text-align: center;
+
+    .wrapper {
+        text-align: center;
+    }
+
+    .portfolioProjectChoiceList {
+        display: flex;
+        justify-content: center;
+        li {
+            padding: 10px 15px;
+        }
+    }
+
+    // .project {
+
+    // }
 }
