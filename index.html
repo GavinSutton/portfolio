@@ -22,11 +22,11 @@
                     <img src="assets/favicon_io/android-chrome-192x192.png" alt="My Logo">
                 </div>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
             <ul class="profileSection">
@@ -40,9 +40,9 @@
                     <a class="button buttonWhite" href="#">Biography</a>
                     <a class="button buttonYellow" href="#">Hire Me</a>
                     <ul class="social">
-                        <li><i class="fab fa-twitter"></i></li>
-                        <li><i class="fab fa-linkedin-in"></i></li>
-                        <li><i class="fab fa-github"></i></li>
+                        <li><a href="https://twitter.com/Gavinsutton"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/gavin-sutton/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://github.com/GavinSutton"><i class="fab fa-github"></i></a></li>
                     </ul>
                 </li>
                 <li class="profileImage">
@@ -246,36 +246,43 @@
                 <div class="contactInfo">
                     <p class="yellow title">contact</p>
                     <h2>Let's Chat</h2>
-                    <ul>
+                    <ul class="contactLeft">
                         <li>
-                            <p></p>
+                            <i class="fas fa-phone-alt"></i>
                             <div>
-                                <p>phone</p>
+                                <p class="yellow">phone</p>
                                 <p>(416) 476-3275</p>
                             </div>
                         </li>
                         <li>
-                            <p></p>
+                            <i class="far fa-envelope"></i>
                             <div>
-                                <p>email</p>
+                                <p class="yellow">email</p>
                                 <p>gavin.w.c.sutton@gmail.com</p>
                             </div>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="https://twitter.com/Gavinsutton"><i class="fab fa-twitter"></i></a><a>
+                                <a href="https://www.linkedin.com/in/gavin-sutton/"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://github.com/GavinSutton"><i class="fab fa-github"></i></a>
+                            </p>
                         </li>
                     </ul>
                 </div>
                 <form action="">
                     <div class="contactNames">
-                        <label for="firstName">First Name</label>
-                        <input type="text" name="firstName" placeholder="Name">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" name="lastName" placeholder="Name">
+                        <label for="firstName" class="yellow">first Name</label>
+                        <input type="text" name="firstName">
+                        <label for="lastName" class="yellow">last name</label>
+                        <input type="text" name="lastName">
                     </div>
-                    <label for="email">Email</label>
-                    <input type="text" name="emai" placeholder="Email">
-                    <label for="subject">Subject</label>
-                    <input type="text" name="subject" placeholder="Subject">
-                    <label for="message">Message</label>
-                    <textarea name="" id="" cols="30" rows="10" name="message" placeholder="Message"></textarea>
+                    <label for="email" class="yellow">email</label>
+                    <input type="text" name="emai">
+                    <label for="subject" class="yellow">subject</label>
+                    <input type="text" name="subject">
+                    <label for="message" class="yellow">message</label>
+                    <textarea name="" id="" cols="30" rows="5" name="message"></textarea>
                     <button type="submit" class="button buttonYellow">Submit</button>
                 </form>
             </div>
@@ -289,11 +296,13 @@
     <!-- FOOTER START -->
     <footer>
         <p>Copyright 2020<sup>&copy;</sup></p>
-        <div>Responsive icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
-                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        <p class="toggleCredits">Click here for credits</p>
+        <div class="credits hide">
+            <p class="yellow">Thanks to the following peeps for the icons!</p>
+            <p>Responsive icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+            <p><a target="_blank" href="https://icons8.com/icons/set/jquery">JQuery icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+            <p><a target="_blank" href="https://icons8.com/icons/set/visual-studio-code-2019">Visual Studio Code 2019 icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
         </div>
-        <p><a target="_blank" href="https://icons8.com/icons/set/jquery">JQuery icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
-        <p><a target="_blank" href="https://icons8.com/icons/set/visual-studio-code-2019">Visual Studio Code 2019 icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
     </footer>
     <!-- FOOTER END -->
     

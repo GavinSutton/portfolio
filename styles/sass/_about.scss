@@ -9,17 +9,15 @@
     .aboutLeft {
         flex: 1 1 50%;
         padding: 150px 0;
-        // .aboutBio {
-        //     border: 1px solid white;
-        //     padding: 20px 30px;
-        // }
     }
+
     .aboutRight {
         flex: 1 1 50%;
         min-width: 500px;
         height: 650px;
         position: relative;
     }
+
     .box1,
     .box2,
     .box3,
@@ -33,6 +31,7 @@
         width: 200px;
         z-index: 2;
     }
+
     .box1 {
         background: $secondaryColour;
         left: 0px;
@@ -40,12 +39,14 @@
         position: relative;
         top: 0px;
     }
+
     .box2 {
         background: $primaryColour;
         position: relative;
         right: -150px;
         top: -50px;
     }
+
     .box3 {
         background: $secondaryColour;
         padding: 0 10px;
@@ -53,12 +54,14 @@
         right: 0;
         top: -100px;
     }
+
     .box4 {
         background: $primaryColour;
         bottom: 0;
         left: 150px;
         position: absolute;
     }
+
     .box5 {
         border: 2px solid white;
         height: 500px;

@@ -1,4 +1,16 @@
 footer {
     background: $backgroundTwo;
     text-align: center;
+
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: inline-block;
+    }
+
+    .toggleCredits {
+        cursor: pointer;
+    }
 }

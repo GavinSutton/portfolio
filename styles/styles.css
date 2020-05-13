@@ -259,6 +259,11 @@ body {
   font-family: 'Jost', sans-serif;
 }
 
+input,
+textarea {
+  font-family: 'Jost', sans-serif;
+}
+
 h1,
 h2,
 p {
@@ -336,7 +341,7 @@ img {
   content: "";
   border-top: 1px solid #F4BC17;
   color: #F4BC17;
-  width: 4rem;
+  width: 2rem;
   margin-right: 2px;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
@@ -580,7 +585,7 @@ img {
       -ms-flex: 1 1 25%;
           flex: 1 1 25%;
   text-align: center;
-  padding: 40px;
+  padding: 30px;
 }
 
 .skills i {
@@ -697,6 +702,17 @@ img {
           flex: 1 1 50%;
 }
 
+.contact .contactLeft i {
+  font-size: 2rem;
+  padding: 25px;
+}
+
+.contact .contactLeft li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .contact form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -714,22 +730,33 @@ img {
 .contact form input,
 .contact form textarea {
   border: 2px solid #F4BC17;
+  margin: 10px 0;
 }
 
 .contact form button {
   background: none;
 }
 
-.contact form input {
-  margin: 10px 0;
-}
-
 .contact form .contactNames {
   -webkit-columns: 2;
           columns: 2;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
 }
 
 footer {
   background: #101026;
   text-align: center;
+}
+
+footer .hide {
+  display: none;
+}
+
+footer .show {
+  display: inline-block;
+}
+
+footer .toggleCredits {
+  cursor: pointer;
 }

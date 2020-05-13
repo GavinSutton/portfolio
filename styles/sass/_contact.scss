@@ -9,6 +9,16 @@
         flex: 1 1 50%;
     }
 
+    .contactLeft {
+        i {
+            font-size: 2rem;
+            padding: 25px;
+        }
+        li {
+            display: flex;
+        }
+    }
+
     form {
         display: flex;
         flex: 1 1 50%;
@@ -18,18 +28,16 @@
         input, 
         textarea {
             border: 2px solid $primaryColour;
+            margin: 10px 0;
         }
 
         button {
             background: none;
         }
 
-        input {
-            margin: 10px 0;
-        }
-
         .contactNames {
             columns: 2;
+            column-gap: 40px;
         }
     }
 }
