@@ -6,6 +6,7 @@ body {
     color: white;
     font-size: 125%;
     font-family: 'Jost', sans-serif;
+    overflow-x: hidden;
 }
 
 input, 
@@ -15,6 +16,8 @@ textarea {
 
 h1, 
 h2, 
+h3, 
+h4,
 p {
     padding: 10px 0
 }

@@ -28,6 +28,47 @@
         width: 100%;
     }
 
+    .fadeRight {
+        transform: translateX(200px);
+    }
+
+    .fadeLeft {
+        transform: translateX(-200px);
+    }
+
+    .fadeRight,
+    .fadeLeft {
+        opacity: 0;
+        transition: opacity 0.5s ease, transform 1s ease;
+    }
+
+    .fadeRight.in,
+    .fadeLeft.in {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    
+
+
+    // .projectOne,
+    // .projectTwo, 
+    // .projectThree,
+    // .projectFour,
+    // .projectFive,
+    // .projectSix {
+    //     opacity: 0;
+    //     transform: translateX(20rem);
+    //     visibility: hidden;
+    //     transition: opacity 0.5s ease, transform 1s ease;
+    // }
+
+    // .fadeIn {
+    //     opacity: 1;
+    //     transform: none;
+    //     visibility: visible;
+    // }
+
     .projectTwo, 
     .projectFour,
     .projectSix {

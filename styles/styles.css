@@ -252,6 +252,7 @@ body {
   color: white;
   font-size: 125%;
   font-family: 'Jost', sans-serif;
+  overflow-x: hidden;
 }
 
 input,
@@ -261,6 +262,8 @@ textarea {
 
 h1,
 h2,
+h3,
+h4,
 p {
   padding: 10px 0;
 }
@@ -449,6 +452,15 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100px;
+}
+
+.header .profileInfo .social i {
+  font-size: 2rem;
+  padding: 25px 25px 25px 0;
+}
+
+.header .profileInfo .social i:hover {
+  color: #F4BC17;
 }
 
 @media (max-width: 850px) {
@@ -650,6 +662,32 @@ img {
   width: 100%;
 }
 
+.portfolio .fadeRight {
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+}
+
+.portfolio .fadeLeft {
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+}
+
+.portfolio .fadeRight,
+.portfolio .fadeLeft {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 1s ease;
+  transition: opacity 0.5s ease, -webkit-transform 1s ease;
+  transition: opacity 0.5s ease, transform 1s ease;
+  transition: opacity 0.5s ease, transform 1s ease, -webkit-transform 1s ease;
+}
+
+.portfolio .fadeRight.in,
+.portfolio .fadeLeft.in {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
 .portfolio .projectTwo,
 .portfolio .projectFour,
 .portfolio .projectSix {
@@ -697,9 +735,17 @@ img {
           flex: 1 1 50%;
 }
 
+.contact .contactLeft {
+  margin-top: 40px;
+}
+
 .contact .contactLeft i {
   font-size: 2rem;
-  padding: 25px;
+  padding: 25px 25px 25px 0;
+}
+
+.contact .contactLeft li:last-child i:hover {
+  color: #F4BC17;
 }
 
 .contact .contactLeft li {

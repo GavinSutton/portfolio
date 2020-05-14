@@ -69,6 +69,13 @@
             display: flex;
             justify-content: space-between;
             width: 100px;
+            i {
+                font-size: 2rem;
+                padding: 25px 25px 25px 0;
+            }
+            i:hover {
+                color: $primaryColour;
+            }
         }
     }
 }

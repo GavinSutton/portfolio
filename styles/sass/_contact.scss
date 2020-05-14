@@ -10,9 +10,13 @@
     }
 
     .contactLeft {
+        margin-top: 40px;
         i {
             font-size: 2rem;
-            padding: 25px;
+            padding: 25px 25px 25px 0;
+        }
+        li:last-child i:hover {
+            color: $primaryColour;
         }
         li {
             display: flex;
