@@ -597,7 +597,7 @@ img {
 }
 
 .skills .jQueryIcon,
-.skills img[src="assets/icons/vscode.png"] {
+.skills .vscodeIcon {
   padding-bottom: 5px;
   width: 75px;
 }

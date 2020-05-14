@@ -32,8 +32,8 @@ portfolio.init = function () {
             $(`.firebaseIcon`).attr('src', "assets/icons/firebaseYellow.png")
         } else if ($(this.firstElementChild).attr(`src`) === "assets/icons/responsive.png"){
             $(`.responsiveIcon`).attr('src', "assets/icons/responsiveYellow.png")
-        } else if (){
-
+        } else if ($(this.firstElementChild).attr(`src`) === "assets/icons/vscode.png"){
+            $(`.vscodeIcon`).attr('src', "assets/icons/vscodeYellow.png")
         }
         // $(`.jQueryIcon`).attr('src', "assets/icons/jQueryYellow.png")
         // alert(`hovered`)
@@ -41,7 +41,7 @@ portfolio.init = function () {
         $(`.jQueryIcon`).attr('src', "assets/icons/jQuery.png")
         $(`.firebaseIcon`).attr('src', "assets/icons/firebase.png")
         $(`.responsiveIcon`).attr('src', "assets/icons/responsive.png")
-        $(`.vsCodeIcon`).attr('src', "assets/icons/responsive.png")
+        $(`.vscodeIcon`).attr('src', "assets/icons/vscode.png")
     })
 }
 
