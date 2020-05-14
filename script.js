@@ -8,8 +8,8 @@ const portfolio = {}
 
 // add music?
 // add konami code
-// fade in icons
 // change portfolio into cool images
+// add labels for social
 
 portfolio.init = function () {
 
@@ -25,11 +25,10 @@ portfolio.init = function () {
     const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
         entries.forEach(entry =>{
             if (!entry.isIntersecting){
-                // return;
-                entry.target.classList.remove(`in`)
+                return;
             } else {
                 entry.target.classList.add(`in`)
-                // appearOnScroll.unobserve(entry.target)
+                appearOnScroll.unobserve(entry.target)
             }
         })
     }, appearOptions)

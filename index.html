@@ -17,6 +17,7 @@
     <!-- HEADER START -->
     <header class="header">
         <div class="wrapper">
+            <i class="fas fa-bars burger"></i>
             <nav>
                 <div class="logoContainer">
                     <img src="assets/favicon_io/android-chrome-192x192.png" alt="My Logo">
@@ -37,8 +38,10 @@
                         <img src="assets/profileGif.gif" alt="Picture of Gavin Sutton being handsome.">
                     </div>
                     <p>Hey. I'm Gavin. Much like Peter Parker, I am a web developer. Unfortunately, I'm not as funny. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolores aspernatur laudantium. Quidem vel maiores doloremque architecto consequuntur, praesentium, ducimus enim aspernatur molestias ipsa qui iure dolore animi placeat hic?</p>
-                    <a class="button buttonWhite" href="#">Biography</a>
-                    <a class="button buttonYellow" href="#">Hire Me</a>
+                    <div class="buttonContainer">
+                        <a class="button buttonWhite" href="#">Biography</a>
+                        <a class="button buttonYellow" href="#">Hire Me</a>
+                    </div>
                     <ul class="social">
                         <li><a href="https://twitter.com/Gavinsutton"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/gavin-sutton/"><i class="fab fa-linkedin-in"></i></a></li>
@@ -164,18 +167,6 @@
                 <ul class="portfolioProjectList">
                     <li class="project projectOne fadeRight">
                         <div class="projectImageBox">
-                            <img src="assets/portfolio/oneMagazine.jpg" alt="Front page of ONE Magazine website.">
-                        </div>
-                        <div class="projectDescriptionBox">
-                            <h3>ONE Magazine</h3>
-                            <h4>Single Page PSD Conversion</h4>
-                            <p>I was given a one page PDF to convert into a functional website. </p>
-                            <a class="button buttonYellow" href="#">Live</a>
-                            <a class="button buttonWhite" href="#">Github</a>
-                        </div>
-                    </li>
-                    <li class="project projectTwo fadeLeft">
-                        <div class="projectImageBox">
                             <img src="assets/portfolio/creative.jpg" alt="Front page of Creative website.">
                         </div>
                         <div class="projectDescriptionBox">
@@ -186,7 +177,7 @@
                             <a class="button buttonWhite" href="#">Github</a>
                         </div>
                     </li>
-                    <li class="project projectThree fadeRight">
+                    <li class="project projectTwo fadeLeft"> 
                         <div class="projectImageBox">
                             <img src="assets/portfolio/007.jpg" alt="Game play shot of my 007 game.">
                         </div>
@@ -198,7 +189,7 @@
                             <a class="button buttonWhite" href="https://github.com/GavinSutton/007">Github</a>
                         </div>
                     </li>
-                    <li class="project projectFour fadeLeft">
+                    <li class="project projectThree fadeRight">
                         <div class="projectImageBox">
                             <img src="assets/portfolio/cocktails.jpg" alt="Front page of Cocktails website.">
                         </div>
@@ -210,7 +201,7 @@
                             <a class="button buttonWhite" href="#">Github</a>
                         </div>
                     </li>
-                    <li class="project projectFive fadeRight">
+                    <li class="project projectFour fadeLeft">
                         <div class="projectImageBox">
                             <img src="assets/portfolio/flickPicker2.jpg" alt="Front page of FlickPicker site.">
                         </div>
@@ -222,7 +213,7 @@
                             <a class="button buttonWhite" href="https://github.com/GavinSutton/flickPicker">Github</a>
                         </div>
                     </li>
-                    <li class="project projectSix fadeLeft">
+                    <li class="project projectFive fadeRight">
                         <div class="projectImageBox">
                             <img src="assets/portfolio/whoTIB.jpg" alt="Front page of the Who Told It Better site. ">
                         </div>
@@ -270,19 +261,15 @@
                         </li>
                     </ul>
                 </div>
-                <form action="">
-                    <div class="contactNames">
-                        <label for="firstName" class="yellow">first Name</label>
-                        <input type="text" name="firstName">
-                        <label for="lastName" class="yellow">last name</label>
-                        <input type="text" name="lastName">
-                    </div>
-                    <label for="email" class="yellow">email</label>
-                    <input type="text" name="emai">
-                    <label for="subject" class="yellow">subject</label>
-                    <input type="text" name="subject">
-                    <label for="message" class="yellow">message</label>
-                    <textarea name="" id="" cols="30" rows="5" name="message"></textarea>
+                <form action="mailto:gavin.w.c.sutton@gmail.com" method="post" enctype="text/plain">
+                    <label for="firstName" class="sr-only">name</label>
+                    <input type="text" name="firstName" placeholder="name">
+                    <label for="email" class="sr-only">email</label>
+                    <input type="text" name="emai" placeholder="email">
+                    <label for="subject" class="sr-only">subject</label>
+                    <input type="text" name="subject" placeholder="subject">
+                    <label for="message" class="sr-only">message</label>
+                    <textarea name="" id="" cols="30" rows="5" name="message" placeholder="message"></textarea>
                     <button type="submit" class="button buttonYellow">Submit</button>
                 </form>
             </div>

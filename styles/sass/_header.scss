@@ -1,5 +1,18 @@
 .header {
     background: $backgroundOne;
+
+    .wrapper {
+        position: relative;
+    }
+
+    .burger {
+        display: none;
+        font-size: 2rem;
+        position: absolute;
+        right: 0;
+        top: 50px;
+    }
+
     nav {
         display: flex;
         justify-content: space-between;
@@ -13,6 +26,8 @@
 
     nav .logoContainer {
         flex: 1 1 25%;
+        min-width: 200px;
+        max-width: 300px;
         margin-top: 30px;
         img {
             width: 20%;
@@ -31,15 +46,10 @@
         flex-wrap: wrap;
         padding: 40px 0;
         align-items: center;
-
-        .social {
-            display: flex;
-            padding: 0;
-        }
     }
 
     .profileImage {
-        flex: 1 1 50%;
+        flex: 1 1 40%;
         min-width: 300px;
 
         img {
@@ -58,7 +68,7 @@
     }
 
     .profileInfo {
-        flex: 1 1 50%;
+        flex: 1 1 60%;
         padding: 15px 15px 15px 0;
         p {
             padding: 20px 0 30px;
@@ -69,6 +79,8 @@
             display: flex;
             justify-content: space-between;
             width: 100px;
+            display: flex;
+            padding: 0;
             i {
                 font-size: 2rem;
                 padding: 25px 25px 25px 0;
@@ -80,7 +92,7 @@
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 910px) {
     .header {
         .profileImage {
             display: none;
@@ -88,6 +100,46 @@
 
         .profileImageMobile {
             display: block;
+        }
+
+        .profileInfo{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            p {
+                text-align: center;
+            }
+            .social {
+                width: auto;
+                i {
+                    padding: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px ){
+    .header {
+        nav ul{
+            display: none;
+        };
+
+        .burger {
+            display: inline-block;
+        }
+    }
+}
+
+@media (max-width: 522px ){
+    .header {
+        .buttonContainer {
+            text-align: center;
+        }
+
+        .button {
+            margin: 10px;
         }
     }
 }

@@ -7,12 +7,12 @@
     }
 
     .aboutLeft {
-        flex: 1 1 50%;
+        flex: 1 1 60%;
         padding: 150px 0;
     }
 
     .aboutRight {
-        flex: 1 1 50%;
+        flex: 1 1 40%;
         min-width: 500px;
         height: 650px;
         position: relative;
@@ -26,7 +26,7 @@
         flex-direction: column;
         height: 200px;
         justify-content: center;
-        margin-left: 150px;
+        margin-left: 100px;
         text-align: center;
         width: 200px;
         z-index: 2;
@@ -67,8 +67,119 @@
         height: 500px;
         position: absolute;
         top: 75px;
-        left: 230px;
+        left: 180px;
         width: 200px;
         z-index: 0;
+    }
+}
+
+@media (max-width:980px ){
+    .about {
+        .aboutList {
+            flex-direction: column;
+        }
+
+        .aboutLeft {
+            padding: 20px 0 100px;
+        }
+
+        .aboutRight {
+            display: flex;
+            flex-direction: row;
+            height: 300px;
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4 {
+            height: 150px;
+            margin-left: 100px;
+            width: 150px;
+        }
+
+        .box1 {
+            left: 30px;
+            top: -100px;
+        }
+
+        .box2 {
+            left: 150px;
+            top: 0px;
+        }
+
+        .box3 {
+            left: -220px;
+            top: -100px;
+        }
+
+        .box4 {
+            left: 150px;
+            top: 0px;
+        }
+
+        .box5 {
+            left: 190px;
+            top: -50px;
+            height: 150px;
+            width: 400px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .about {
+        .aboutList {
+            flex-direction: column;
+        }
+
+        .aboutLeft {
+            padding: 20px 0 100px;
+        }
+
+        .aboutRight {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 300px;
+            position: static;
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4 {
+            height: 200px;
+            margin-left: 100px;
+            width: 200px;
+            position: static;
+            margin-left: 0;
+            flex: 1 1 200px;
+        }
+
+        .box1 {
+            left: 0px;
+            top: 0px;
+        }
+
+        .box2 {
+            left: 0px;
+            top: 0px;
+        }
+
+        .box3 {
+            left: 0px;
+            top: 0px;
+        }
+
+        .box4 {
+            left: 0px;
+            top: 0px;
+        }
+
+        .box5 {
+            display: none;
+        }
     }
 }
