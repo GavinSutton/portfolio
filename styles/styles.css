@@ -248,11 +248,6 @@ textarea {
   overflow: hidden;
 }
 
-* {
-  -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
-}
-
 body {
   color: white;
   font-size: 125%;
@@ -592,16 +587,16 @@ img {
   font-size: 5rem;
 }
 
-.skills img[src="assets/icons/responsive.png"] {
+.skills .responsiveIcon {
   width: 100px;
   padding-bottom: 10px;
 }
 
-.skills img[src="assets/icons/firebase.png"] {
+.skills .firebaseIcon {
   width: 75px;
 }
 
-.skills img[src="assets/icons/jQuery.png"],
+.skills .jQueryIcon,
 .skills img[src="assets/icons/vscode.png"] {
   padding-bottom: 5px;
   width: 75px;
