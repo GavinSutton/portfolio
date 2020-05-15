@@ -50,6 +50,16 @@
             background: none;
         }
     }
+
+    .up {
+        text-align: center;
+        padding: 10px;
+        i {
+            border: 1px solid $primaryColour;
+            border-radius: 50%;
+            padding: 10px;
+        }
+    }
 }
 
 

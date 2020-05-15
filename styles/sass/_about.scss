@@ -111,6 +111,7 @@
         .box3 {
             left: -220px;
             top: -100px;
+            order: 2;
         }
 
         .box4 {
@@ -134,7 +135,7 @@
         }
 
         .aboutLeft {
-            padding: 20px 0 100px;
+            padding: 20px 0;
         }
 
         .aboutRight {
@@ -150,12 +151,13 @@
         .box2,
         .box3,
         .box4 {
-            height: 200px;
+            height: 150px;
             margin-left: 100px;
-            width: 200px;
+            width: 30%;
             position: static;
             margin-left: 0;
-            flex: 1 1 200px;
+            margin:10px
+            // flex: 1 1 200px;
         }
 
         .box1 {

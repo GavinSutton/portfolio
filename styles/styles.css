@@ -250,6 +250,7 @@ textarea {
 
 html {
   font-size: 125%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -267,6 +268,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p {
   padding: 10px 0;
 }
@@ -285,10 +287,17 @@ h3 {
 
 h4 {
   font-size: 1.3rem;
+  text-transform: lowercase;
+  color: #F4BC17;
+}
+
+h5 {
+  font-size: 0.8rem;
+  padding-bottom: 10px;
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 a {
@@ -659,6 +668,9 @@ img {
   .about .box3 {
     left: -220px;
     top: -100px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .about .box4 {
     left: 150px;
@@ -680,7 +692,7 @@ img {
             flex-direction: column;
   }
   .about .aboutLeft {
-    padding: 20px 0 100px;
+    padding: 20px 0;
   }
   .about .aboutRight {
     display: -webkit-box;
@@ -702,14 +714,12 @@ img {
   .about .box2,
   .about .box3,
   .about .box4 {
-    height: 200px;
+    height: 150px;
     margin-left: 100px;
-    width: 200px;
+    width: 30%;
     position: static;
     margin-left: 0;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 200px;
-            flex: 1 1 200px;
+    margin: 10px;
   }
   .about .box1 {
     left: 0px;
@@ -766,22 +776,22 @@ img {
 }
 
 .skills i {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 .skills .responsiveIcon {
-  width: 100px;
+  width: 75px;
   padding-bottom: 10px;
 }
 
 .skills .firebaseIcon {
-  width: 75px;
+  width: 60px;
 }
 
 .skills .jQueryIcon,
 .skills .vscodeIcon {
   padding-bottom: 5px;
-  width: 75px;
+  width: 55px;
 }
 
 .portfolio {
@@ -791,19 +801,6 @@ img {
 
 .portfolio .wrapper {
   text-align: center;
-}
-
-.portfolio .portfolioProjectChoiceList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.portfolio .portfolioProjectChoiceList li {
-  padding: 10px 15px;
 }
 
 .portfolio .portfolioProjectList {
@@ -868,6 +865,7 @@ img {
 }
 
 .portfolio .projectImageBox {
+  border: 1px solid #F4BC17;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -878,15 +876,65 @@ img {
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 60%;
-          flex: 1 1 60%;
-  width: 400px;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  margin-bottom: 20px;
 }
 
 .portfolio .projectDescriptionBox {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40%;
-          flex: 1 1 40%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio .fadeRight .projectDescriptionBox {
+  text-align: left;
+}
+
+.portfolio .fadeRight .projectDescriptionBox .button {
+  margin: 0;
+}
+
+.portfolio .fadeLeft .projectDescriptionBox {
+  text-align: right;
+}
+
+.portfolio .fadeLeft .projectDescriptionBox .button {
+  margin: 0;
+}
+
+@media (max-width: 1050px) {
+  .portfolio .project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .portfolio .projectImageBox {
+    min-width: 200px;
+    max-width: 700px;
+  }
+  .portfolio .fadeRight .projectDescriptionBox,
+  .portfolio .fadeLeft .projectDescriptionBox {
+    text-align: center;
+  }
 }
 
 .contact {
@@ -958,6 +1006,17 @@ img {
 
 .contact form button {
   background: none;
+}
+
+.contact .up {
+  text-align: center;
+  padding: 10px;
+}
+
+.contact .up i {
+  border: 1px solid #F4BC17;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 @media (max-width: 980px) {

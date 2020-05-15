@@ -15,9 +15,9 @@
 </head>
 <body>
     <!-- HEADER START -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="wrapper">
-            <i class="fas fa-bars burger"></i>
+            <a href="#"><i class="fas fa-bars burger"></i></a>
             <nav>
                 <div class="logoContainer">
                     <img src="assets/favicon_io/android-chrome-192x192.png" alt="My Logo">
@@ -39,13 +39,13 @@
                     </div>
                     <p>Hey. I'm Gavin. Much like Peter Parker, I am a web developer. Unfortunately, I'm not as funny. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolores aspernatur laudantium. Quidem vel maiores doloremque architecto consequuntur, praesentium, ducimus enim aspernatur molestias ipsa qui iure dolore animi placeat hic?</p>
                     <div class="buttonContainer">
-                        <a class="button buttonWhite" href="#">Biography</a>
-                        <a class="button buttonYellow" href="#">Hire Me</a>
+                        <a class="button buttonWhite" href="#about">Tell Me More</a>
+                        <a class="button buttonYellow" href="#contact">Let's Chat</a>
                     </div>
                     <ul class="social">
-                        <li><a href="https://twitter.com/Gavinsutton"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/gavin-sutton/"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="https://github.com/GavinSutton"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://twitter.com/Gavinsutton" aria-label="Twitter Icon" aria-title="Twitter" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/gavin-sutton/" title="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                        <li><a href="https://github.com/GavinSutton" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>
                     </ul>
                 </li>
                 <li class="profileImage">
@@ -68,7 +68,7 @@
                         <p class="yellow title">about</p>
                         <h2>Me</h2>
                         <p class="aboutBio">As you can see, I love to learn. I'm always trying to be better than yesterday's me. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, error! Fugit minus atque dicta cumque exercitationem eligendi omnis ea distinctio facilis corrupti suscipit voluptate reprehenderit dolore repellendus adipisci doloremque nobis, tenetur inventore quis reiciendis nulla optio eius. Consequuntur, modi. At inventore incidunt nulla mollitia provident sit et, nemo quis omnis.</p>
-                        <p class="yellow">Download CV</p>
+                        <p class="yellow" title="Download Resume">Download Resume</p>
                     </li>
                     <li class="aboutRight">
                         <div class="box1">
@@ -124,7 +124,7 @@
                     </li>
                     <li>
                         <i class="fab fa-sass"></i>
-                        <p>Sass</p>
+                        <p>SCSS</p>
                     </li>
                     <li class="iconSwap">
                         <img src="assets/icons/firebase.png" class="firebaseIcon" alt="Firebase icon.">
@@ -156,14 +156,6 @@
             <div class="wrapper">
                 <p class="yellow title">portfolio</p>
                 <h2>Portfolio</h2>
-                <ul class="portfolioProjectChoiceList">
-                    <li>All</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>API</li>
-                    <li>React</li>
-                </ul>
                 <ul class="portfolioProjectList">
                     <li class="project projectOne fadeRight">
                         <div class="projectImageBox">
@@ -171,10 +163,12 @@
                         </div>
                         <div class="projectDescriptionBox">
                             <h3>Creative</h3>
-                            <h4>Multi-Page PSD Conversion</h4>
-                            <p></p>
-                            <a class="button buttonYellow" href="#">Live</a>
-                            <a class="button buttonWhite" href="#">Github</a>
+                            <h4>a multi-page psd conversion</h4>
+                            <h5>HTML | SCSS </h5>
+                            <div>
+                                <a class="button buttonYellow" href="#" title="Go to live site">Live</a>
+                                <a class="button buttonWhite" href="#" title="Go to GitHub">Github</a>
+                            </div>
                         </div>
                     </li>
                     <li class="project projectTwo fadeLeft"> 
@@ -183,10 +177,12 @@
                         </div>
                         <div class="projectDescriptionBox">
                             <h3>007</h3>
-                            <h4>JavaScipt Game</h4>
-                            <p></p>
-                            <a class="button buttonYellow" href="https://gavinsutton.github.io/007/">Live</a>
-                            <a class="button buttonWhite" href="https://github.com/GavinSutton/007">Github</a>
+                            <h4>a nostalgic game of skill</h4>
+                            <h5>HTML | SCSS | JAVASCRIPT</h5>
+                            <div>
+                                <a class="button buttonYellow" href="https://gavinsutton.github.io/007/" title="Go to live site">Live</a>
+                                <a class="button buttonWhite" href="https://github.com/GavinSutton/007" title="Go to GitHub">Github</a>
+                            </div>
                         </div>
                     </li>
                     <li class="project projectThree fadeRight">
@@ -195,10 +191,12 @@
                         </div>
                         <div class="projectDescriptionBox">
                             <h3>Cocktails</h3>
-                            <h4>API Cocktail Generator</h4>
-                            <p></p>
-                            <a class="button buttonYellow" href="#">Live</a>
-                            <a class="button buttonWhite" href="#">Github</a>
+                            <h4>generate a cocktail based on your alcohol of choice</h4>
+                            <h5>HTML | CSS | JAVASCRIPT | API</h5>
+                            <div>
+                                <a class="button buttonYellow" href="#" title="Go to live site">Live</a>
+                                <a class="button buttonWhite" href="#" title="Go to GitHub">Github</a>
+                            </div>
                         </div>
                     </li>
                     <li class="project projectFour fadeLeft">
@@ -207,10 +205,12 @@
                         </div>
                         <div class="projectDescriptionBox">
                             <h3>FlickPicker</h3>
-                            <h4>API / Firebase Movie Picker</h4>
-                            <p></p>
-                            <a class="button buttonYellow" href="https://gavinsutton.github.io/flickPicker/">Live</a>
-                            <a class="button buttonWhite" href="https://github.com/GavinSutton/flickPicker">Github</a>
+                            <h4>a movie picker for the undecisive</h4>
+                            <h5>HTML | CSS | REACT | FIREBASE | API</h5>
+                            <div>
+                                <a class="button buttonYellow" href="https://gavinsutton.github.io/flickPicker/" title="Go to live site">Live</a>
+                                <a class="button buttonWhite" href="https://github.com/GavinSutton/flickPicker" title="Go to GitHub">Github</a>
+                            </div>
                         </div>
                     </li>
                     <li class="project projectFive fadeRight">
@@ -219,10 +219,12 @@
                         </div>
                         <div class="projectDescriptionBox">
                             <h3>Who Told It Better</h3>
-                            <h4>Two API React Moive / Book Winner</h4>
-                            <p></p>
-                            <a class="button buttonYellow" href="#">Live</a>
-                            <a class="button buttonWhite" href="#">Github</a>
+                            <h4>a group project that settles which was better: the movie or the book?</h4>
+                            <h5>HTML | SCSS | REACT | API</h5>
+                            <div>
+                                <a class="button buttonYellow" href="https://whotib.github.io/whoToldItBetter/" title="Go to live site">Live</a>
+                                <a class="button buttonWhite" href="https://github.com/whotib/whoToldItBetter" title="Go to GitHub">Github</a>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -232,11 +234,11 @@
         <!-- PORTFOLIO END -->
 
         <!-- CONTACT START -->
-        <section class="contact" id="contact">
+        <section class="contact">
             <div class="wrapper">
                 <div class="contactInfo">
                     <p class="yellow title">contact</p>
-                    <h2>Let's Chat</h2>
+                    <h2 id="contact">Let's Chat</h2>
                     <ul class="contactLeft">
                         <li>
                             <i class="fas fa-phone-alt"></i>
@@ -254,11 +256,11 @@
                         </li>
                         <li>
                             <p>
-                                <a href="https://twitter.com/Gavinsutton"><i class="fab fa-twitter"></i></a><a>
-                                <a href="https://www.linkedin.com/in/gavin-sutton/"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="https://github.com/GavinSutton"><i class="fab fa-github"></i></a>
+                                <a href="https://twitter.com/Gavinsutton" aria-label="Twitter Icon" aria-title="Twitter" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/in/gavin-sutton/" title="LinkedIn"><i class="fab fa-linkedin-in"aria-hidden="true"></i></a>
+                                <a href="https://github.com/GavinSutton" title="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
                             </p>
-                        </li>
+                        </<a>
                     </ul>
                 </div>
                 <form action="mailto:gavin.w.c.sutton@gmail.com" method="post" enctype="text/plain">
@@ -273,6 +275,11 @@
                     <button type="submit" class="button buttonYellow">Submit</button>
                 </form>
             </div>
+            <div class="up">
+                <a href="#header"><i class="fas fa-chevron-up" aria-hidden="true" title="Back up to the top of the page"></i></a>
+                <span class="sr-only">Back up the top of the page</span>
+
+            </div>
         </section>
         <!-- CONTACT END -->
 
@@ -282,8 +289,8 @@
 
     <!-- FOOTER START -->
     <footer>
-        <p>Copyright 2020<sup>&copy;</sup></p>
-        <p class="toggleCredits">Click here for credits</p>
+        <h5>Copyright 2020<sup>&copy;</sup></h5>
+        <h5 class="toggleCredits" tabindex="0">Click here for credits</h5>
         <div class="credits hide">
             <p class="yellow">Thanks to the following peeps for the icons!</p>
             <p>Responsive icon made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
