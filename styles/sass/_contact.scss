@@ -33,17 +33,20 @@
         input, 
         textarea {
             color: white;
-            margin: 10px 0;
+            margin: 15px 0;
             background: inherit;
+            resize: none;
         }
 
         input {
             border: none;
-            border-bottom: 2px solid $primaryColour;
+            border-bottom: 1px solid $primaryColour;
+            border-radius: 0;
         }
 
         textarea {
-            border: 2px solid $primaryColour;
+            border: 1px solid $primaryColour;
+            border-radius: 0;
         }
 
         button {
@@ -97,7 +100,7 @@
         }
 
         form {
-            width: 80%;
+            width: 90%;
 
             button {
                 width: 100%

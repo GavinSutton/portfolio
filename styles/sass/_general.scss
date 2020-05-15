@@ -54,7 +54,7 @@ h5 {
 p {
     font-size: 1rem;
     font-weight: 300;
-    line-height: 1.1rem;
+    line-height: 1.7rem;
 }
 
 a {
@@ -87,9 +87,19 @@ img {
     color: white
 }
 
+.buttonWhite:hover {
+    color: $backgroundOne;
+    background: white;
+}
+
 .buttonYellow {
     border: 1px solid $primaryColour;
     color: $primaryColour;
+}
+
+.buttonYellow:hover {
+    color: $backgroundOne;
+    background: $primaryColour;
 }
 
 .wrapper {
@@ -100,7 +110,7 @@ img {
 
 .yellow {
     color: $primaryColour;
-    
+    line-height: 1.1rem;
 }
 
 .line::before {
