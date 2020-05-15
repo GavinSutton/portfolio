@@ -11,32 +11,11 @@ const portfolio = {}
 // change portfolio into cool images
 // add labels for social
 
+AOS.init({
+    duration: 1200,
+});
+
 portfolio.init = function () {
-
-    // fadeIn on scroll function start
-    // thanks to  Kevin Powell on youtube for the tutorial on IntersectionObserver & how to utilize it to have this cool animation on scroll (https://www.youtube.com/watch?v=huVJW23JHKQ)
-    const fadeIn = document.querySelectorAll(`.project`)
-
-    const appearOptions = {
-        threshold: 0,
-        rootMargin: "0px 0px -100px 0px"
-    }
-
-    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
-        entries.forEach(entry =>{
-            if (!entry.isIntersecting){
-                return;
-            } else {
-                entry.target.classList.add(`in`)
-                appearOnScroll.unobserve(entry.target)
-            }
-        })
-    }, appearOptions)
-
-    fadeIn.forEach((project) => {
-        appearOnScroll.observe(project)
-    })
-    // fadeIn on scroll function end
 
     // simple toggle to show credits of icons used
     $(`.toggleCredits`).on(`click`, function(){
