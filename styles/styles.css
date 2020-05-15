@@ -582,6 +582,7 @@ img {
 .about {
   background: #101026;
   overflow-x: hidden;
+  padding-bottom: 50px;
 }
 
 .about .aboutList {
