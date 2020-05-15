@@ -10,6 +10,7 @@ html{
 body {
     color: white;
     font-family: 'Jost', sans-serif;
+    font-weight: 400;
     overflow-x: hidden;
 }
 
@@ -52,6 +53,8 @@ h5 {
 
 p {
     font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.1rem;
 }
 
 a {
