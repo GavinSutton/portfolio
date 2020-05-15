@@ -1098,6 +1098,7 @@ img {
 footer {
   background: #101026;
   text-align: center;
+  padding: 15px 0;
 }
 
 footer .hide {
