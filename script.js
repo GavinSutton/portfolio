@@ -17,6 +17,11 @@ AOS.init({
 
 portfolio.init = function () {
 
+    $(`.burger`).on(`click`, function(){
+        $(`.navBar`).toggleClass(`hide`)
+        $(`.burger`).toggleClass(`blue`)
+    })
+
     // simple toggle to show credits of icons used
     $(`.toggleCredits`).on(`click`, function(){
         $(`.credits`).toggleClass(`hide`)

@@ -1,6 +1,7 @@
 .portfolio {
     background: $backgroundTwo;
     text-align: center;
+    overflow-x: hidden;
 
     .wrapper {
         text-align: center;
@@ -18,26 +19,6 @@
         padding: 50px 0;
         margin: 10px;
         width: 100%;
-    }
-
-    .fadeRight {
-        transform: translateX(200px);
-    }
-
-    .fadeLeft {
-        transform: translateX(-200px);
-    }
-
-    .fadeRight,
-    .fadeLeft {
-        opacity: 0;
-        transition: opacity 0.5s ease, transform 1s ease;
-    }
-
-    .fadeRight.in,
-    .fadeLeft.in {
-        opacity: 1;
-        transform: translateX(0);
     }
 
     .projectTwo, 

@@ -11,6 +11,11 @@
         position: absolute;
         right: 0;
         top: 50px;
+        z-index: 2;
+    }
+
+    .burger.blue {
+        color: $backgroundOne;
     }
 
     nav {
@@ -127,8 +132,24 @@
 @media (max-width: 800px ){
     .header {
         nav ul{
-            display: none;
+            position: absolute;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            right: -70px;
+            top: 0;
+            bottom: 0;
+            color: $backgroundOne;
+            background: $primaryColour;
+            width: 200px;
+            li:first-child{
+                padding-top: 100px;
+            }
         };
+
+        .hide {
+            display: none;
+        }
 
         .burger {
             display: inline-block;
