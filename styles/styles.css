@@ -324,7 +324,12 @@ img {
   width: 200px;
 }
 
+a:focus {
+  border-bottom: 2px solid #F4BC17;
+}
+
 .button:focus {
+  border: 2px solid #F4BC17;
   -webkit-box-shadow: 2px 2px 2px #F4BC17;
           box-shadow: 2px 2px 2px #F4BC17;
 }
@@ -420,7 +425,7 @@ img {
 }
 
 .header nav li a:hover {
-  color: #F4BC17;
+  border-bottom: 1px solid #F4BC17;
 }
 
 .header nav .logoContainer {
@@ -985,6 +990,11 @@ img {
 .contact .contactLeft i {
   font-size: 2rem;
   padding: 25px 25px 25px 0;
+}
+
+.contact .contactLeft p {
+  line-height: 1.1rem;
+  padding: 7px 0;
 }
 
 .contact .contactLeft li:last-child i:hover {

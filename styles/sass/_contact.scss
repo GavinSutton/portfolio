@@ -16,6 +16,10 @@
             font-size: 2rem;
             padding: 25px 25px 25px 0;
         }
+        p {
+            line-height: 1.1rem;
+            padding: 7px 0;
+        }
         li:last-child i:hover {
             color: $primaryColour;
         }
