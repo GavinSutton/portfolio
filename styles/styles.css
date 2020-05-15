@@ -881,7 +881,6 @@ img {
 }
 
 .portfolio .projectImageBox {
-  border: 1px solid #F4BC17;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -895,6 +894,10 @@ img {
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
   margin-bottom: 20px;
+}
+
+.portfolio .projectImageBox img {
+  border: 1px solid #F4BC17;
 }
 
 .portfolio .projectDescriptionBox {
