@@ -965,6 +965,12 @@ a:focus {
   }
 }
 
+@media (max-width: 642px) {
+  .portfolio .button {
+    margin: 15px 0;
+  }
+}
+
 .contact {
   -webkit-transition: 1s all ease;
   transition: 1s all ease;
