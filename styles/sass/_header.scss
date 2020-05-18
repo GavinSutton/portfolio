@@ -66,20 +66,16 @@
     .profileImage {
         flex: 1 1 40%;
         min-width: 300px;
+    }
 
-        img {
-            border-radius: 90%;
-        }
+    .video {
+        border-radius: 90%;
     }
 
     .profileImageMobile {
         display: none;
         flex: 1 1;
         max-width: 400px;
-
-        img {
-            border-radius: 90%;
-        }
     }
 
     .profileInfo {

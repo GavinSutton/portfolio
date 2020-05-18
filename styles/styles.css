@@ -473,7 +473,7 @@ a:focus {
   min-width: 300px;
 }
 
-.header .profileImage img {
+.header .video {
   border-radius: 90%;
 }
 
@@ -483,10 +483,6 @@ a:focus {
       -ms-flex: 1 1;
           flex: 1 1;
   max-width: 400px;
-}
-
-.header .profileImageMobile img {
-  border-radius: 90%;
 }
 
 .header .profileInfo {
