@@ -591,6 +591,9 @@ a:focus {
   .header .button {
     margin: 10px;
   }
+  .header h1 {
+    text-align: center;
+  }
 }
 
 .about {
@@ -836,10 +839,10 @@ a:focus {
 }
 
 .skills .responsiveIcon {
-  width: 75px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
+.skills .responsiveIcon,
 .skills .firebaseIcon {
   width: 60px;
 }
